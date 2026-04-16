@@ -1,0 +1,41 @@
+from datetime import datetime, date, time
+from typing import Any, List, Optional, Union, Set
+from enum import Enum
+from pydantic import BaseModel, field_validator
+
+
+############################################
+# Enumerations are defined here
+############################################
+
+############################################
+# Classes are defined here
+############################################
+class ParticipantCreate(BaseModel):
+    Name: str
+    meeting: Optional[List[int]] = None  # N:M Relationship (optional)
+
+
+class EventCreate(BaseModel):
+    /numberEvents: int
+    Place: str
+    Period: timedelta
+    Date: date
+    Name: str
+    calendar: int  # N:1 Relationship (mandatory)
+
+
+class MeetingCreate(EventCreate):
+    NumberParticipants: str
+    participant: Optional[List[int]] = None  # N:M Relationship (optional)
+
+
+class CoursesCreate(EventCreate):
+    Type: str
+
+
+class CalendarCreate(BaseModel):
+    Name: str
+    event: Optional[List[int]] = None  # 1:N Relationship
+
+

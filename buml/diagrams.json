@@ -1,0 +1,1667 @@
+{
+  "ClassDiagram": [
+    {
+      "id": "b7faf91f-7cfc-4293-924f-56e8a3baac27",
+      "title": "Class Diagram",
+      "model": {
+        "version": "3.0.0",
+        "type": "ClassDiagram",
+        "size": {
+          "width": 1680,
+          "height": 760
+        },
+        "interactive": {
+          "elements": {},
+          "relationships": {}
+        },
+        "elements": {
+          "e7b494c7-1008-4eb3-a4d0-b51f5d3db02f": {
+            "id": "e7b494c7-1008-4eb3-a4d0-b51f5d3db02f",
+            "name": "Calendar",
+            "type": "Class",
+            "owner": null,
+            "bounds": {
+              "x": -170,
+              "y": -360,
+              "width": 160,
+              "height": 70
+            },
+            "attributes": [
+              "63de2aab-0f69-422d-82eb-5a1ee150c946"
+            ],
+            "methods": []
+          },
+          "63de2aab-0f69-422d-82eb-5a1ee150c946": {
+            "id": "63de2aab-0f69-422d-82eb-5a1ee150c946",
+            "name": "Name",
+            "type": "ClassAttribute",
+            "owner": "e7b494c7-1008-4eb3-a4d0-b51f5d3db02f",
+            "bounds": {
+              "x": -169.5,
+              "y": -319.5,
+              "width": 159,
+              "height": 30
+            },
+            "code": "",
+            "visibility": "public",
+            "attributeType": "str",
+            "implementationType": "none",
+            "stateMachineId": "",
+            "quantumCircuitId": "",
+            "isOptional": false,
+            "isDerived": false
+          },
+          "94cfdb19-a65f-4f32-893e-1d3e38c94131": {
+            "id": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+            "name": "Event",
+            "type": "Class",
+            "owner": null,
+            "bounds": {
+              "x": -400,
+              "y": -160,
+              "width": 170,
+              "height": 190
+            },
+            "attributes": [
+              "10a04e53-53e2-4ace-b062-ba3d1bc6052a",
+              "8eba0cc7-25f3-4b0f-9a68-e5ddb4e668e5",
+              "d22810c7-9588-462a-a517-baa65ed56e72",
+              "cc3b920a-8416-450f-a2b4-ed2e1cea8a32",
+              "1fee04f2-efaa-4208-9a81-21522e5ab9d0"
+            ],
+            "methods": []
+          },
+          "10a04e53-53e2-4ace-b062-ba3d1bc6052a": {
+            "id": "10a04e53-53e2-4ace-b062-ba3d1bc6052a",
+            "name": "/numberEvents",
+            "type": "ClassAttribute",
+            "owner": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+            "bounds": {
+              "x": -399.5,
+              "y": -119.5,
+              "width": 169,
+              "height": 30
+            },
+            "code": "",
+            "visibility": "protected",
+            "attributeType": "int",
+            "implementationType": "none",
+            "stateMachineId": "",
+            "quantumCircuitId": "",
+            "isOptional": false,
+            "isDerived": false
+          },
+          "8eba0cc7-25f3-4b0f-9a68-e5ddb4e668e5": {
+            "id": "8eba0cc7-25f3-4b0f-9a68-e5ddb4e668e5",
+            "name": "Name",
+            "type": "ClassAttribute",
+            "owner": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+            "bounds": {
+              "x": -399.5,
+              "y": -89.5,
+              "width": 169,
+              "height": 30
+            },
+            "code": "",
+            "visibility": "public",
+            "attributeType": "str",
+            "implementationType": "none",
+            "stateMachineId": "",
+            "quantumCircuitId": "",
+            "isOptional": false,
+            "isDerived": false
+          },
+          "d22810c7-9588-462a-a517-baa65ed56e72": {
+            "id": "d22810c7-9588-462a-a517-baa65ed56e72",
+            "name": "Date",
+            "type": "ClassAttribute",
+            "owner": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+            "bounds": {
+              "x": -399.5,
+              "y": -59.5,
+              "width": 169,
+              "height": 30
+            },
+            "code": "",
+            "visibility": "public",
+            "attributeType": "date",
+            "implementationType": "none",
+            "stateMachineId": "",
+            "quantumCircuitId": "",
+            "isOptional": false,
+            "isDerived": false
+          },
+          "cc3b920a-8416-450f-a2b4-ed2e1cea8a32": {
+            "id": "cc3b920a-8416-450f-a2b4-ed2e1cea8a32",
+            "name": "Period",
+            "type": "ClassAttribute",
+            "owner": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+            "bounds": {
+              "x": -399.5,
+              "y": -29.5,
+              "width": 169,
+              "height": 30
+            },
+            "code": "",
+            "visibility": "public",
+            "attributeType": "timedelta",
+            "implementationType": "none",
+            "stateMachineId": "",
+            "quantumCircuitId": "",
+            "isOptional": false,
+            "isDerived": false
+          },
+          "1fee04f2-efaa-4208-9a81-21522e5ab9d0": {
+            "id": "1fee04f2-efaa-4208-9a81-21522e5ab9d0",
+            "name": "Place",
+            "type": "ClassAttribute",
+            "owner": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+            "bounds": {
+              "x": -399.5,
+              "y": 0.5,
+              "width": 169,
+              "height": 30
+            },
+            "code": "",
+            "visibility": "public",
+            "attributeType": "str",
+            "implementationType": "none",
+            "stateMachineId": "",
+            "quantumCircuitId": "",
+            "isOptional": false,
+            "isDerived": false
+          },
+          "2d474ee6-8aa4-4808-9dde-b71062ac8d6a": {
+            "id": "2d474ee6-8aa4-4808-9dde-b71062ac8d6a",
+            "name": "Courses",
+            "type": "Class",
+            "owner": null,
+            "bounds": {
+              "x": -820,
+              "y": -80,
+              "width": 180,
+              "height": 70
+            },
+            "attributes": [
+              "a69fc5cf-9370-46a8-9de5-371d9e1aa1d1"
+            ],
+            "methods": []
+          },
+          "a69fc5cf-9370-46a8-9de5-371d9e1aa1d1": {
+            "id": "a69fc5cf-9370-46a8-9de5-371d9e1aa1d1",
+            "name": "Type",
+            "type": "ClassAttribute",
+            "owner": "2d474ee6-8aa4-4808-9dde-b71062ac8d6a",
+            "bounds": {
+              "x": -819.5,
+              "y": -39.5,
+              "width": 179,
+              "height": 30
+            },
+            "code": "",
+            "visibility": "public",
+            "attributeType": "str",
+            "implementationType": "none",
+            "stateMachineId": "",
+            "quantumCircuitId": "",
+            "isOptional": false,
+            "isDerived": false
+          },
+          "637130fe-0764-4b0c-9b09-98fd3ab77cce": {
+            "id": "637130fe-0764-4b0c-9b09-98fd3ab77cce",
+            "name": "Meeting",
+            "type": "Class",
+            "owner": null,
+            "bounds": {
+              "x": -354,
+              "y": 103,
+              "width": 160,
+              "height": 70
+            },
+            "attributes": [
+              "c682adfa-3d05-43c0-a14a-8e2ddbfb372b"
+            ],
+            "methods": []
+          },
+          "c682adfa-3d05-43c0-a14a-8e2ddbfb372b": {
+            "id": "c682adfa-3d05-43c0-a14a-8e2ddbfb372b",
+            "name": "NumberParticipants",
+            "type": "ClassAttribute",
+            "owner": "637130fe-0764-4b0c-9b09-98fd3ab77cce",
+            "bounds": {
+              "x": -353.5,
+              "y": 143.5,
+              "width": 159,
+              "height": 30
+            },
+            "code": "",
+            "visibility": "public",
+            "attributeType": "str",
+            "implementationType": "none",
+            "stateMachineId": "",
+            "quantumCircuitId": "",
+            "isOptional": false,
+            "isDerived": false
+          },
+          "a86ab834-58fb-4b68-a079-e124e4fe5618": {
+            "id": "a86ab834-58fb-4b68-a079-e124e4fe5618",
+            "name": "Participant",
+            "type": "Class",
+            "owner": null,
+            "bounds": {
+              "x": -362,
+              "y": 244,
+              "width": 160,
+              "height": 70
+            },
+            "attributes": [
+              "2751f14b-7163-44ef-922b-0ce2693497be"
+            ],
+            "methods": []
+          },
+          "2751f14b-7163-44ef-922b-0ce2693497be": {
+            "id": "2751f14b-7163-44ef-922b-0ce2693497be",
+            "name": "Name",
+            "type": "ClassAttribute",
+            "owner": "a86ab834-58fb-4b68-a079-e124e4fe5618",
+            "bounds": {
+              "x": -361.5,
+              "y": 284.5,
+              "width": 159,
+              "height": 30
+            },
+            "code": "",
+            "visibility": "public",
+            "attributeType": "str",
+            "implementationType": "none",
+            "stateMachineId": "",
+            "quantumCircuitId": "",
+            "isOptional": false,
+            "isDerived": false
+          }
+        },
+        "relationships": {
+          "6950ab57-2e4b-482f-9f96-6918cc3a019e": {
+            "id": "6950ab57-2e4b-482f-9f96-6918cc3a019e",
+            "name": "",
+            "type": "ClassBidirectional",
+            "owner": null,
+            "bounds": {
+              "x": -320,
+              "y": -290,
+              "width": 203.90625,
+              "height": 139
+            },
+            "path": [
+              {
+                "x": 190,
+                "y": 0
+              },
+              {
+                "x": 190,
+                "y": 65
+              },
+              {
+                "x": 5,
+                "y": 65
+              },
+              {
+                "x": 5,
+                "y": 130
+              }
+            ],
+            "source": {
+              "direction": "Bottomleft",
+              "element": "e7b494c7-1008-4eb3-a4d0-b51f5d3db02f",
+              "multiplicity": "1",
+              "role": ""
+            },
+            "target": {
+              "direction": "Up",
+              "element": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+              "multiplicity": "*",
+              "role": ""
+            },
+            "isManuallyLayouted": false
+          },
+          "ee8a5b06-7e9c-4389-9dce-e4348ccf83a5": {
+            "id": "ee8a5b06-7e9c-4389-9dce-e4348ccf83a5",
+            "name": "",
+            "type": "ClassInheritance",
+            "owner": null,
+            "bounds": {
+              "x": -640,
+              "y": -55,
+              "width": 240,
+              "height": 48
+            },
+            "path": [
+              {
+                "x": 0,
+                "y": 10
+              },
+              {
+                "x": 240,
+                "y": 10
+              }
+            ],
+            "source": {
+              "direction": "Right",
+              "element": "2d474ee6-8aa4-4808-9dde-b71062ac8d6a",
+              "multiplicity": "*",
+              "role": ""
+            },
+            "target": {
+              "direction": "Left",
+              "element": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+              "multiplicity": "1",
+              "role": ""
+            },
+            "isManuallyLayouted": false
+          },
+          "147dc27a-efb7-4e8e-80ba-cca4bfec7370": {
+            "id": "147dc27a-efb7-4e8e-80ba-cca4bfec7370",
+            "name": "",
+            "type": "ClassInheritance",
+            "owner": null,
+            "bounds": {
+              "x": -297,
+              "y": 30,
+              "width": 18.90625,
+              "height": 82
+            },
+            "path": [
+              {
+                "x": 5,
+                "y": 73
+              },
+              {
+                "x": 5,
+                "y": 0
+              }
+            ],
+            "source": {
+              "direction": "Topleft",
+              "element": "637130fe-0764-4b0c-9b09-98fd3ab77cce",
+              "multiplicity": "1",
+              "role": ""
+            },
+            "target": {
+              "direction": "Down",
+              "element": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+              "multiplicity": "*",
+              "role": ""
+            },
+            "isManuallyLayouted": false
+          },
+          "4c7f96cf-27f0-45b7-be03-bda46bb3953f": {
+            "id": "4c7f96cf-27f0-45b7-be03-bda46bb3953f",
+            "name": "",
+            "type": "ClassBidirectional",
+            "owner": null,
+            "bounds": {
+              "x": -283,
+              "y": 173,
+              "width": 17,
+              "height": 80
+            },
+            "path": [
+              {
+                "x": 5,
+                "y": 71
+              },
+              {
+                "x": 5,
+                "y": 0
+              }
+            ],
+            "source": {
+              "direction": "Up",
+              "element": "a86ab834-58fb-4b68-a079-e124e4fe5618",
+              "multiplicity": "*",
+              "role": ""
+            },
+            "target": {
+              "direction": "Down",
+              "element": "637130fe-0764-4b0c-9b09-98fd3ab77cce",
+              "multiplicity": "*",
+              "role": ""
+            },
+            "isManuallyLayouted": false
+          }
+        },
+        "assessments": {}
+      },
+      "lastUpdate": "2026-04-16T08:05:19.029Z"
+    }
+  ],
+  "GUINoCodeDiagram": [
+    {
+      "id": "9c5fc653-be1c-483c-875c-ef6253c1e51c",
+      "title": "G U I No Code Diagram",
+      "model": {
+        "pages": [
+          {
+            "name": "Calendar",
+            "frames": [
+              {
+                "component": {
+                  "type": "wrapper",
+                  "stylable": [
+                    "background",
+                    "background-color",
+                    "background-image",
+                    "background-repeat",
+                    "background-attachment",
+                    "background-position",
+                    "background-size"
+                  ],
+                  "components": [
+                    {
+                      "attributes": {
+                        "id": "i04xg"
+                      },
+                      "components": [
+                        {
+                          "tagName": "nav",
+                          "attributes": {
+                            "id": "irel4"
+                          },
+                          "components": [
+                            {
+                              "tagName": "h2",
+                              "type": "text",
+                              "attributes": {
+                                "id": "igb1c"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "BESSER"
+                                }
+                              ]
+                            },
+                            {
+                              "attributes": {
+                                "id": "ix4e6"
+                              },
+                              "components": [
+                                {
+                                  "type": "link",
+                                  "attributes": {
+                                    "href": "/calendar",
+                                    "id": "ijafe"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Calendar"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "link",
+                                  "attributes": {
+                                    "href": "/event",
+                                    "id": "ixw2j"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Event"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "link",
+                                  "attributes": {
+                                    "href": "/category",
+                                    "id": "i7ips"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Category"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "attributes": {
+                                "id": "iztgj"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "\u00a9 2026 BESSER. All rights reserved."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tagName": "main",
+                          "attributes": {
+                            "id": "ihn2f"
+                          },
+                          "components": [
+                            {
+                              "tagName": "h1",
+                              "type": "text",
+                              "attributes": {
+                                "id": "idhxl"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "Calendar"
+                                }
+                              ]
+                            },
+                            {
+                              "tagName": "p",
+                              "type": "text",
+                              "attributes": {
+                                "id": "irvr6"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "Manage Calendar data"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "table",
+                              "style": "",
+                              "attributes": {
+                                "chart-color": "#2c3e50",
+                                "chart-title": "Calendar List",
+                                "data-source": "e7b494c7-1008-4eb3-a4d0-b51f5d3db02f",
+                                "show-header": "true",
+                                "striped-rows": "false",
+                                "show-pagination": "true",
+                                "rows-per-page": "5",
+                                "action-buttons": "true",
+                                "columns": [
+                                  {
+                                    "field": "Name",
+                                    "label": "Name",
+                                    "columnType": "field",
+                                    "_expanded": false
+                                  },
+                                  {
+                                    "field": "Event",
+                                    "label": "Event",
+                                    "columnType": "lookup",
+                                    "lookupEntity": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+                                    "lookupField": "/numberEvents",
+                                    "_expanded": false
+                                  }
+                                ],
+                                "id": "table-calendar-0",
+                                "filter": ""
+                              },
+                              "chart-title": "Calendar List",
+                              "data-source": "e7b494c7-1008-4eb3-a4d0-b51f5d3db02f",
+                              "show-header": "true",
+                              "striped-rows": "false",
+                              "show-pagination": "true",
+                              "action-buttons": "true",
+                              "rows-per-page": "5",
+                              "filter": "",
+                              "columns": [
+                                {
+                                  "field": "Name",
+                                  "label": "Name",
+                                  "columnType": "field",
+                                  "_expanded": false
+                                },
+                                {
+                                  "field": "Event",
+                                  "label": "Event",
+                                  "columnType": "lookup",
+                                  "lookupEntity": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+                                  "lookupField": "/numberEvents",
+                                  "_expanded": false
+                                }
+                              ],
+                              "components": [
+                                {
+                                  "type": "tbody",
+                                  "draggable": [
+                                    "table"
+                                  ],
+                                  "droppable": [
+                                    "tr"
+                                  ],
+                                  "components": [
+                                    {
+                                      "type": "row",
+                                      "draggable": [
+                                        "thead",
+                                        "tbody",
+                                        "tfoot"
+                                      ],
+                                      "droppable": [
+                                        "th",
+                                        "td"
+                                      ],
+                                      "classes": [
+                                        "row"
+                                      ],
+                                      "components": [
+                                        {
+                                          "type": "cell",
+                                          "draggable": [
+                                            "tr"
+                                          ],
+                                          "classes": [
+                                            "cell"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "chart-color": "#2c3e50"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "head": {
+                    "type": "head"
+                  },
+                  "docEl": {
+                    "tagName": "html"
+                  }
+                },
+                "id": "AU65Asw3s6aAkHEY"
+              }
+            ],
+            "id": "page-calendar-0",
+            "route_path": "/calendar"
+          },
+          {
+            "name": "Event",
+            "frames": [
+              {
+                "component": {
+                  "type": "wrapper",
+                  "stylable": [
+                    "background",
+                    "background-color",
+                    "background-image",
+                    "background-repeat",
+                    "background-attachment",
+                    "background-position",
+                    "background-size"
+                  ],
+                  "components": [
+                    {
+                      "attributes": {
+                        "id": "iab1i"
+                      },
+                      "components": [
+                        {
+                          "tagName": "nav",
+                          "attributes": {
+                            "id": "iq1in"
+                          },
+                          "components": [
+                            {
+                              "tagName": "h2",
+                              "type": "text",
+                              "attributes": {
+                                "id": "ihusg"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "BESSER"
+                                }
+                              ]
+                            },
+                            {
+                              "attributes": {
+                                "id": "inn6o"
+                              },
+                              "components": [
+                                {
+                                  "type": "link",
+                                  "attributes": {
+                                    "href": "/calendar",
+                                    "id": "iddsz"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Calendar"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "link",
+                                  "attributes": {
+                                    "href": "/event",
+                                    "id": "ij8jj"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Event"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "link",
+                                  "attributes": {
+                                    "href": "/category",
+                                    "id": "iq4w3"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Category"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "attributes": {
+                                "id": "ifyvo"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "\u00a9 2026 BESSER. All rights reserved."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tagName": "main",
+                          "attributes": {
+                            "id": "ilx9t"
+                          },
+                          "components": [
+                            {
+                              "tagName": "h1",
+                              "type": "text",
+                              "attributes": {
+                                "id": "i4j2f"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "Event"
+                                }
+                              ]
+                            },
+                            {
+                              "tagName": "p",
+                              "type": "text",
+                              "attributes": {
+                                "id": "idfds"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "Manage Event data"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "table",
+                              "style": "",
+                              "attributes": {
+                                "chart-color": "#2c3e50",
+                                "chart-title": "Event List",
+                                "data-source": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+                                "show-header": "true",
+                                "striped-rows": "false",
+                                "show-pagination": "true",
+                                "rows-per-page": "5",
+                                "action-buttons": "true",
+                                "columns": [
+                                  {
+                                    "field": "/numberEvents",
+                                    "label": "/NumberEvents",
+                                    "columnType": "field",
+                                    "_expanded": false
+                                  },
+                                  {
+                                    "field": "Name",
+                                    "label": "Name",
+                                    "columnType": "field",
+                                    "_expanded": false
+                                  },
+                                  {
+                                    "field": "Date",
+                                    "label": "Date",
+                                    "columnType": "field",
+                                    "_expanded": false
+                                  },
+                                  {
+                                    "field": "Period",
+                                    "label": "Period",
+                                    "columnType": "field",
+                                    "_expanded": false
+                                  },
+                                  {
+                                    "field": "Calendar",
+                                    "label": "Calendar",
+                                    "columnType": "lookup",
+                                    "lookupEntity": "e7b494c7-1008-4eb3-a4d0-b51f5d3db02f",
+                                    "lookupField": "Name",
+                                    "_expanded": false
+                                  },
+                                  {
+                                    "field": "Category",
+                                    "label": "Category",
+                                    "columnType": "lookup",
+                                    "lookupEntity": "ef0ee04b-ead2-4c76-bf30-ea0b022153dd",
+                                    "lookupField": "Name",
+                                    "_expanded": false
+                                  }
+                                ],
+                                "id": "table-event-1",
+                                "filter": ""
+                              },
+                              "chart-title": "Event List",
+                              "data-source": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+                              "show-header": "true",
+                              "striped-rows": "false",
+                              "show-pagination": "true",
+                              "action-buttons": "true",
+                              "rows-per-page": "5",
+                              "filter": "",
+                              "columns": [
+                                {
+                                  "field": "/numberEvents",
+                                  "label": "/NumberEvents",
+                                  "columnType": "field",
+                                  "_expanded": false
+                                },
+                                {
+                                  "field": "Name",
+                                  "label": "Name",
+                                  "columnType": "field",
+                                  "_expanded": false
+                                },
+                                {
+                                  "field": "Date",
+                                  "label": "Date",
+                                  "columnType": "field",
+                                  "_expanded": false
+                                },
+                                {
+                                  "field": "Period",
+                                  "label": "Period",
+                                  "columnType": "field",
+                                  "_expanded": false
+                                },
+                                {
+                                  "field": "Calendar",
+                                  "label": "Calendar",
+                                  "columnType": "lookup",
+                                  "lookupEntity": "e7b494c7-1008-4eb3-a4d0-b51f5d3db02f",
+                                  "lookupField": "Name",
+                                  "_expanded": false
+                                },
+                                {
+                                  "field": "Category",
+                                  "label": "Category",
+                                  "columnType": "lookup",
+                                  "lookupEntity": "ef0ee04b-ead2-4c76-bf30-ea0b022153dd",
+                                  "lookupField": "Name",
+                                  "_expanded": false
+                                }
+                              ],
+                              "components": [
+                                {
+                                  "type": "tbody",
+                                  "draggable": [
+                                    "table"
+                                  ],
+                                  "droppable": [
+                                    "tr"
+                                  ],
+                                  "components": [
+                                    {
+                                      "type": "row",
+                                      "draggable": [
+                                        "thead",
+                                        "tbody",
+                                        "tfoot"
+                                      ],
+                                      "droppable": [
+                                        "th",
+                                        "td"
+                                      ],
+                                      "classes": [
+                                        "row"
+                                      ],
+                                      "components": [
+                                        {
+                                          "type": "cell",
+                                          "draggable": [
+                                            "tr"
+                                          ],
+                                          "classes": [
+                                            "cell"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "chart-color": "#2c3e50"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "head": {
+                    "type": "head"
+                  },
+                  "docEl": {
+                    "tagName": "html"
+                  }
+                },
+                "id": "jIawZraohLZIo4so"
+              }
+            ],
+            "id": "page-event-1",
+            "route_path": "/event"
+          },
+          {
+            "name": "Category",
+            "frames": [
+              {
+                "component": {
+                  "type": "wrapper",
+                  "stylable": [
+                    "background",
+                    "background-color",
+                    "background-image",
+                    "background-repeat",
+                    "background-attachment",
+                    "background-position",
+                    "background-size"
+                  ],
+                  "components": [
+                    {
+                      "attributes": {
+                        "id": "i9wqu"
+                      },
+                      "components": [
+                        {
+                          "tagName": "nav",
+                          "attributes": {
+                            "id": "inhjk"
+                          },
+                          "components": [
+                            {
+                              "tagName": "h2",
+                              "type": "text",
+                              "attributes": {
+                                "id": "i32ux"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "BESSER"
+                                }
+                              ]
+                            },
+                            {
+                              "attributes": {
+                                "id": "i8suu"
+                              },
+                              "components": [
+                                {
+                                  "type": "link",
+                                  "attributes": {
+                                    "href": "/calendar",
+                                    "id": "idfuc"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Calendar"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "link",
+                                  "attributes": {
+                                    "href": "/event",
+                                    "id": "i2ys6"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Event"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "link",
+                                  "attributes": {
+                                    "href": "/category",
+                                    "id": "ii1q5"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Category"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "attributes": {
+                                "id": "i5a1f"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "\u00a9 2026 BESSER. All rights reserved."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tagName": "main",
+                          "attributes": {
+                            "id": "i114z"
+                          },
+                          "components": [
+                            {
+                              "tagName": "h1",
+                              "type": "text",
+                              "attributes": {
+                                "id": "isgpg"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "Category"
+                                }
+                              ]
+                            },
+                            {
+                              "tagName": "p",
+                              "type": "text",
+                              "attributes": {
+                                "id": "iufla"
+                              },
+                              "components": [
+                                {
+                                  "type": "textnode",
+                                  "content": "Manage Category data"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "table",
+                              "style": "",
+                              "classes": [
+                                "has-data-binding"
+                              ],
+                              "attributes": {
+                                "chart-color": "#2c3e50",
+                                "chart-title": "Category List",
+                                "data-source": "ef0ee04b-ead2-4c76-bf30-ea0b022153dd",
+                                "show-header": "true",
+                                "striped-rows": "false",
+                                "show-pagination": "true",
+                                "rows-per-page": "5",
+                                "action-buttons": "true",
+                                "columns": [
+                                  {
+                                    "field": "Name",
+                                    "label": "Name",
+                                    "columnType": "field",
+                                    "_expanded": false
+                                  },
+                                  {
+                                    "field": "Event",
+                                    "label": "Event",
+                                    "columnType": "lookup",
+                                    "lookupEntity": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+                                    "lookupField": "/numberEvents",
+                                    "_expanded": false
+                                  }
+                                ],
+                                "id": "table-category-2",
+                                "filter": ""
+                              },
+                              "chart-title": "Category List",
+                              "data-source": "ef0ee04b-ead2-4c76-bf30-ea0b022153dd",
+                              "show-header": "true",
+                              "striped-rows": "false",
+                              "show-pagination": "true",
+                              "action-buttons": "true",
+                              "rows-per-page": "5",
+                              "filter": "",
+                              "columns": [
+                                {
+                                  "field": "Name",
+                                  "label": "Name",
+                                  "columnType": "field",
+                                  "_expanded": false
+                                },
+                                {
+                                  "field": "Event",
+                                  "label": "Event",
+                                  "columnType": "lookup",
+                                  "lookupEntity": "94cfdb19-a65f-4f32-893e-1d3e38c94131",
+                                  "lookupField": "/numberEvents",
+                                  "_expanded": false
+                                }
+                              ],
+                              "components": [
+                                {
+                                  "type": "tbody",
+                                  "draggable": [
+                                    "table"
+                                  ],
+                                  "droppable": [
+                                    "tr"
+                                  ],
+                                  "components": [
+                                    {
+                                      "type": "row",
+                                      "draggable": [
+                                        "thead",
+                                        "tbody",
+                                        "tfoot"
+                                      ],
+                                      "droppable": [
+                                        "th",
+                                        "td"
+                                      ],
+                                      "classes": [
+                                        "row"
+                                      ],
+                                      "components": [
+                                        {
+                                          "type": "cell",
+                                          "draggable": [
+                                            "tr"
+                                          ],
+                                          "classes": [
+                                            "cell"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "chart-color": "#2c3e50"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "head": {
+                    "type": "head"
+                  },
+                  "docEl": {
+                    "tagName": "html"
+                  }
+                },
+                "id": "i86sHxdVtFkAQDUI"
+              }
+            ],
+            "id": "page-category-2",
+            "route_path": "/category"
+          }
+        ],
+        "styles": [
+          {
+            "selectors": [
+              "#igb1c"
+            ],
+            "style": {
+              "margin-top": "0",
+              "font-size": "24px",
+              "margin-bottom": "30px",
+              "font-weight": "bold"
+            }
+          },
+          {
+            "selectors": [
+              "#ijafe"
+            ],
+            "style": {
+              "color": "white",
+              "text-decoration": "none",
+              "padding": "10px 15px",
+              "display": "block",
+              "background": "rgba(255,255,255,0.2)",
+              "border-radius": "4px",
+              "margin-bottom": "5px"
+            }
+          },
+          {
+            "selectors": [
+              "#ixw2j"
+            ],
+            "style": {
+              "color": "white",
+              "text-decoration": "none",
+              "padding": "10px 15px",
+              "display": "block",
+              "background": "transparent",
+              "border-radius": "4px",
+              "margin-bottom": "5px"
+            }
+          },
+          {
+            "selectors": [
+              "#i7ips"
+            ],
+            "style": {
+              "color": "white",
+              "text-decoration": "none",
+              "padding": "10px 15px",
+              "display": "block",
+              "background": "transparent",
+              "border-radius": "4px",
+              "margin-bottom": "5px"
+            }
+          },
+          {
+            "selectors": [
+              "#ix4e6"
+            ],
+            "style": {
+              "display": "flex",
+              "flex-direction": "column",
+              "flex": "1"
+            }
+          },
+          {
+            "selectors": [
+              "#iztgj"
+            ],
+            "style": {
+              "margin-top": "auto",
+              "padding-top": "20px",
+              "border-top": "1px solid rgba(255,255,255,0.2)",
+              "font-size": "11px",
+              "opacity": "0.8",
+              "text-align": "center"
+            }
+          },
+          {
+            "selectors": [
+              "#irel4"
+            ],
+            "style": {
+              "width": "250px",
+              "background": "linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)",
+              "color": "white",
+              "padding": "20px",
+              "overflow-y": "auto",
+              "display": "flex",
+              "flex-direction": "column"
+            }
+          },
+          {
+            "selectors": [
+              "#idhxl"
+            ],
+            "style": {
+              "margin-top": "0",
+              "color": "#333",
+              "font-size": "32px",
+              "margin-bottom": "10px"
+            }
+          },
+          {
+            "selectors": [
+              "#irvr6"
+            ],
+            "style": {
+              "color": "#666",
+              "margin-bottom": "30px"
+            }
+          },
+          {
+            "selectors": [
+              "#table-calendar-0"
+            ],
+            "style": {
+              "width": "100%",
+              "min-height": "400px"
+            }
+          },
+          {
+            "selectors": [
+              "#ihn2f"
+            ],
+            "style": {
+              "flex": "1",
+              "padding": "40px",
+              "overflow-y": "auto",
+              "background": "#f5f5f5"
+            }
+          },
+          {
+            "selectors": [
+              "#i04xg"
+            ],
+            "style": {
+              "display": "flex",
+              "height": "100vh",
+              "font-family": "Arial, sans-serif"
+            }
+          },
+          {
+            "selectors": [
+              "#ihusg"
+            ],
+            "style": {
+              "margin-top": "0",
+              "font-size": "24px",
+              "margin-bottom": "30px",
+              "font-weight": "bold"
+            }
+          },
+          {
+            "selectors": [
+              "#iddsz"
+            ],
+            "style": {
+              "color": "white",
+              "text-decoration": "none",
+              "padding": "10px 15px",
+              "display": "block",
+              "background": "transparent",
+              "border-radius": "4px",
+              "margin-bottom": "5px"
+            }
+          },
+          {
+            "selectors": [
+              "#ij8jj"
+            ],
+            "style": {
+              "color": "white",
+              "text-decoration": "none",
+              "padding": "10px 15px",
+              "display": "block",
+              "background": "rgba(255,255,255,0.2)",
+              "border-radius": "4px",
+              "margin-bottom": "5px"
+            }
+          },
+          {
+            "selectors": [
+              "#iq4w3"
+            ],
+            "style": {
+              "color": "white",
+              "text-decoration": "none",
+              "padding": "10px 15px",
+              "display": "block",
+              "background": "transparent",
+              "border-radius": "4px",
+              "margin-bottom": "5px"
+            }
+          },
+          {
+            "selectors": [
+              "#inn6o"
+            ],
+            "style": {
+              "display": "flex",
+              "flex-direction": "column",
+              "flex": "1"
+            }
+          },
+          {
+            "selectors": [
+              "#ifyvo"
+            ],
+            "style": {
+              "margin-top": "auto",
+              "padding-top": "20px",
+              "border-top": "1px solid rgba(255,255,255,0.2)",
+              "font-size": "11px",
+              "opacity": "0.8",
+              "text-align": "center"
+            }
+          },
+          {
+            "selectors": [
+              "#iq1in"
+            ],
+            "style": {
+              "width": "250px",
+              "background": "linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)",
+              "color": "white",
+              "padding": "20px",
+              "overflow-y": "auto",
+              "display": "flex",
+              "flex-direction": "column"
+            }
+          },
+          {
+            "selectors": [
+              "#i4j2f"
+            ],
+            "style": {
+              "margin-top": "0",
+              "color": "#333",
+              "font-size": "32px",
+              "margin-bottom": "10px"
+            }
+          },
+          {
+            "selectors": [
+              "#idfds"
+            ],
+            "style": {
+              "color": "#666",
+              "margin-bottom": "30px"
+            }
+          },
+          {
+            "selectors": [
+              "#table-event-1"
+            ],
+            "style": {
+              "width": "100%",
+              "min-height": "400px"
+            }
+          },
+          {
+            "selectors": [
+              "#ilx9t"
+            ],
+            "style": {
+              "flex": "1",
+              "padding": "40px",
+              "overflow-y": "auto",
+              "background": "#f5f5f5"
+            }
+          },
+          {
+            "selectors": [
+              "#iab1i"
+            ],
+            "style": {
+              "display": "flex",
+              "height": "100vh",
+              "font-family": "Arial, sans-serif"
+            }
+          },
+          {
+            "selectors": [
+              "#i32ux"
+            ],
+            "style": {
+              "margin-top": "0",
+              "font-size": "24px",
+              "margin-bottom": "30px",
+              "font-weight": "bold"
+            }
+          },
+          {
+            "selectors": [
+              "#idfuc"
+            ],
+            "style": {
+              "color": "white",
+              "text-decoration": "none",
+              "padding": "10px 15px",
+              "display": "block",
+              "background": "transparent",
+              "border-radius": "4px",
+              "margin-bottom": "5px"
+            }
+          },
+          {
+            "selectors": [
+              "#i2ys6"
+            ],
+            "style": {
+              "color": "white",
+              "text-decoration": "none",
+              "padding": "10px 15px",
+              "display": "block",
+              "background": "transparent",
+              "border-radius": "4px",
+              "margin-bottom": "5px"
+            }
+          },
+          {
+            "selectors": [
+              "#ii1q5"
+            ],
+            "style": {
+              "color": "white",
+              "text-decoration": "none",
+              "padding": "10px 15px",
+              "display": "block",
+              "background": "rgba(255,255,255,0.2)",
+              "border-radius": "4px",
+              "margin-bottom": "5px"
+            }
+          },
+          {
+            "selectors": [
+              "#i8suu"
+            ],
+            "style": {
+              "display": "flex",
+              "flex-direction": "column",
+              "flex": "1"
+            }
+          },
+          {
+            "selectors": [
+              "#i5a1f"
+            ],
+            "style": {
+              "margin-top": "auto",
+              "padding-top": "20px",
+              "border-top": "1px solid rgba(255,255,255,0.2)",
+              "font-size": "11px",
+              "opacity": "0.8",
+              "text-align": "center"
+            }
+          },
+          {
+            "selectors": [
+              "#inhjk"
+            ],
+            "style": {
+              "width": "250px",
+              "background": "linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)",
+              "color": "white",
+              "padding": "20px",
+              "overflow-y": "auto",
+              "display": "flex",
+              "flex-direction": "column"
+            }
+          },
+          {
+            "selectors": [
+              "#isgpg"
+            ],
+            "style": {
+              "margin-top": "0",
+              "color": "#333",
+              "font-size": "32px",
+              "margin-bottom": "10px"
+            }
+          },
+          {
+            "selectors": [
+              "#iufla"
+            ],
+            "style": {
+              "color": "#666",
+              "margin-bottom": "30px"
+            }
+          },
+          {
+            "selectors": [
+              "#table-category-2"
+            ],
+            "style": {
+              "width": "100%",
+              "min-height": "400px"
+            }
+          },
+          {
+            "selectors": [
+              "#i114z"
+            ],
+            "style": {
+              "flex": "1",
+              "padding": "40px",
+              "overflow-y": "auto",
+              "background": "#f5f5f5"
+            }
+          },
+          {
+            "selectors": [
+              "#i9wqu"
+            ],
+            "style": {
+              "display": "flex",
+              "height": "100vh",
+              "font-family": "Arial, sans-serif"
+            }
+          }
+        ],
+        "assets": [],
+        "symbols": [],
+        "version": "0.21.13"
+      },
+      "lastUpdate": "2026-04-16T07:31:07.974Z"
+    }
+  ]
+}
