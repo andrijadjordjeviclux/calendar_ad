@@ -674,7 +674,7 @@ async def create_event(event_data: EventCreate, database: Session = Depends(get_
         raise HTTPException(status_code=400, detail="Calendar ID is required")
 
     db_event = Event(
-        /numberEvents=event_data./numberEvents,        Place=event_data.Place,        Period=event_data.Period,        Date=event_data.Date,        Name=event_data.Name,        calendar_id=event_data.calendar        )
+        Place=event_data.Place,        Period=event_data.Period,        Date=event_data.Date,        /numberEvents=event_data./numberEvents,        Name=event_data.Name,        calendar_id=event_data.calendar        )
 
     database.add(db_event)
     database.commit()
@@ -699,7 +699,7 @@ async def bulk_create_event(items: list[EventCreate], database: Session = Depend
                 raise ValueError("Calendar ID is required")
 
             db_event = Event(
-                /numberEvents=item_data./numberEvents,                Place=item_data.Place,                Period=item_data.Period,                Date=item_data.Date,                Name=item_data.Name,                calendar_id=item_data.calendar            )
+                Place=item_data.Place,                Period=item_data.Period,                Date=item_data.Date,                /numberEvents=item_data./numberEvents,                Name=item_data.Name,                calendar_id=item_data.calendar            )
             database.add(db_event)
             database.flush()  # Get ID without committing
             created_items.append(db_event.id)
@@ -746,10 +746,10 @@ async def update_event(event_id: int, event_data: EventCreate, database: Session
     if db_event is None:
         raise HTTPException(status_code=404, detail="Event not found")
 
-    setattr(db_event, '/numberEvents', event_data./numberEvents)
     setattr(db_event, 'Place', event_data.Place)
     setattr(db_event, 'Period', event_data.Period)
     setattr(db_event, 'Date', event_data.Date)
+    setattr(db_event, '/numberEvents', event_data./numberEvents)
     setattr(db_event, 'Name', event_data.Name)
     if event_data.calendar is not None:
         db_calendar = database.query(Calendar).filter(Calendar.id == event_data.calendar).first()
@@ -904,7 +904,7 @@ async def create_meeting(meeting_data: MeetingCreate, database: Session = Depend
                 raise HTTPException(status_code=404, detail=f"Participant with ID {id} not found")
 
     db_meeting = Meeting(
-        /numberEvents=meeting_data./numberEvents,        Place=meeting_data.Place,        Period=meeting_data.Period,        Date=meeting_data.Date,        Name=meeting_data.Name,        NumberParticipants=meeting_data.NumberParticipants,        calendar_id=meeting_data.calendar        )
+        Place=meeting_data.Place,        Period=meeting_data.Period,        Date=meeting_data.Date,        /numberEvents=meeting_data./numberEvents,        Name=meeting_data.Name,        NumberParticipants=meeting_data.NumberParticipants,        calendar_id=meeting_data.calendar        )
 
     database.add(db_meeting)
     database.commit()
@@ -942,7 +942,7 @@ async def bulk_create_meeting(items: list[MeetingCreate], database: Session = De
                 raise ValueError("Calendar ID is required")
 
             db_meeting = Meeting(
-                /numberEvents=item_data./numberEvents,                Place=item_data.Place,                Period=item_data.Period,                Date=item_data.Date,                Name=item_data.Name,                NumberParticipants=item_data.NumberParticipants,                calendar_id=item_data.calendar            )
+                Place=item_data.Place,                Period=item_data.Period,                Date=item_data.Date,                /numberEvents=item_data./numberEvents,                Name=item_data.Name,                NumberParticipants=item_data.NumberParticipants,                calendar_id=item_data.calendar            )
             database.add(db_meeting)
             database.flush()  # Get ID without committing
             created_items.append(db_meeting.id)
@@ -1197,7 +1197,7 @@ async def create_courses(courses_data: CoursesCreate, database: Session = Depend
         raise HTTPException(status_code=400, detail="Calendar ID is required")
 
     db_courses = Courses(
-        /numberEvents=courses_data./numberEvents,        Place=courses_data.Place,        Period=courses_data.Period,        Date=courses_data.Date,        Name=courses_data.Name,        Type=courses_data.Type,        calendar_id=courses_data.calendar        )
+        Place=courses_data.Place,        Period=courses_data.Period,        Date=courses_data.Date,        /numberEvents=courses_data./numberEvents,        Name=courses_data.Name,        Type=courses_data.Type,        calendar_id=courses_data.calendar        )
 
     database.add(db_courses)
     database.commit()
@@ -1222,7 +1222,7 @@ async def bulk_create_courses(items: list[CoursesCreate], database: Session = De
                 raise ValueError("Calendar ID is required")
 
             db_courses = Courses(
-                /numberEvents=item_data./numberEvents,                Place=item_data.Place,                Period=item_data.Period,                Date=item_data.Date,                Name=item_data.Name,                Type=item_data.Type,                calendar_id=item_data.calendar            )
+                Place=item_data.Place,                Period=item_data.Period,                Date=item_data.Date,                /numberEvents=item_data./numberEvents,                Name=item_data.Name,                Type=item_data.Type,                calendar_id=item_data.calendar            )
             database.add(db_courses)
             database.flush()  # Get ID without committing
             created_items.append(db_courses.id)

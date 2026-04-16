@@ -17,10 +17,10 @@ class ParticipantCreate(BaseModel):
 
 
 class EventCreate(BaseModel):
-    /numberEvents: int
     Place: str
     Period: timedelta
     Date: date
+    /numberEvents: int
     Name: str
     calendar: int  # N:1 Relationship (mandatory)
 

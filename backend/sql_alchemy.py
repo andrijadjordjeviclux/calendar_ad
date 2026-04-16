@@ -19,8 +19,8 @@ class Base(DeclarativeBase):
 participant_meeting = Table_(
     "participant_meeting",
     Base.metadata,
-    Column_("participant", ForeignKey_("participant.id"), primary_key=True),
     Column_("meeting", ForeignKey_("meeting.id"), primary_key=True),
+    Column_("participant", ForeignKey_("participant.id"), primary_key=True),
 )
 
 # Tables definition
